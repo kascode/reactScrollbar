@@ -73,7 +73,7 @@ gulp.task('default', function(callback){
 });
 
 gulp.task('production', function(callback){
-    runSequence('build-production', 'build-production-nocss', 'less', callback);
+    runSequence('build', 'build-production-nocss', 'less', callback);
 });
 
 gulp.task('watch', function() {
